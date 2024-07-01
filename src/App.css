@@ -1,0 +1,6 @@
+#grid-container {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    justify-content: center;
+    border: 4px solid yellow;
+}
