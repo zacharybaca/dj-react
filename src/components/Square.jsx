@@ -1,9 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import "./square.css";
 
-export default function Square() {
+export default function Square(props) {
+    
     return (
-        <div className="square-container">
-            <h1>1</h1>
+        <div className="square-container" style={{backgroundColor: props.color}}>
+            
         </div>
     )
 }
