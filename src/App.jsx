@@ -16,15 +16,19 @@ function App() {
     }
   }
 
+  // Party DJ Function
+  function party() {
+    setSquareColors(["purple", "purple", "white", "white"]);
+  }
+
   return (
     <div id="grid-container">
       {squareColors.map((color, index) => {
-        console.log(color);
         return <Square key={index} color={color}/>
       })}
       
       <button onClick={smallTime}>DJ Small</button>
-      <button>Party DJ</button>
+      <button onClick={party}>Party DJ</button>
       <button>Left Blue</button>
       <button>Right Blue</button>
       <button>Big DJ One</button>
