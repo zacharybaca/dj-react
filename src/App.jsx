@@ -41,6 +41,32 @@ function App() {
     })
   }
 
+  // Big DJ One Function
+  function bdOne() {
+    setSquareColors(["gold", "gold", "gold", "gold"]);
+  }
+
+  // Big DJ Two Function
+  function bdTwo() {
+    setSquareColors(["silver", "silver", "silver", "silver"])
+  }
+
+  // Big DJ Three Function
+  function bdThree() {
+    setSquareColors(["orange", "orange", "orange", "orange"])
+  }
+
+  // Big DJ Four Function
+  function bdFour() {
+    setSquareColors(["orange", "silver", "yellow", "gold"])
+  }
+
+  // Make Noise Function
+  function makeNoise() {
+    const sound = new Audio("/src/assets/tornado-siren.mp3");
+    sound.play();
+  }
+
   return (
     <div id="grid-container">
       {squareColors.map((color, index) => {
@@ -51,11 +77,11 @@ function App() {
       <button onClick={party}>Party DJ</button>
       <button onClick={leftBlue}>Left Blue</button>
       <button onClick={rightBlue}>Right Blue</button>
-      <button>Big DJ One</button>
-      <button>Big DJ Two</button>
-      <button>Big DJ Three</button>
-      <button>Big DJ Four</button>
-      <button>Make Noise</button>
+      <button onClick={bdOne}>Big DJ One</button>
+      <button onClick={bdTwo}>Big DJ Two</button>
+      <button onClick={bdThree}>Big DJ Three</button>
+      <button onClick={bdFour}>Big DJ Four</button>
+      <button onClick={makeNoise}>Make Noise</button>
     </div>
   )
 }
